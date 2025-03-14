@@ -5,7 +5,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 90%; /* full with on smaller screens */
+  width: 80%; /* full with on smaller screens */
   margin: 0 auto; /* Auto margin on both sides to center the div */
   padding: 20px; /* Optional padding */
   border: 1px solid #ccc; /* Optional border for visibility */
