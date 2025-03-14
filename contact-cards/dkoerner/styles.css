@@ -5,11 +5,18 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 359px; /* Fixed width */
+  width: 90%; /* full with on smaller screens */
   margin: 0 auto; /* Auto margin on both sides to center the div */
   padding: 20px; /* Optional padding */
   border: 1px solid #ccc; /* Optional border for visibility */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional shadow for better visibility */
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+  .card {
+      max-width: 359px; /* Maximum width on larger screens */
+  }
 }
 
 .portrait-container img {
