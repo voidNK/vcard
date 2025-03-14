@@ -3,8 +3,8 @@ function createQRCodeImage(url, qrContainer) {
   // Generate the QR code inside the container
   new QRCode(qrContainer, {
       text: url,
-      width: 429,
-      height: 429,
+      width: 128,
+      height: 128,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
