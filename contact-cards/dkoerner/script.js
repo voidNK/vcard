@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const qrCodeContainer = document.getElementById("qr-code-container");
 
   // generate qr code image
-  const url = `https://dkoerner.github.io/esri-links/contact-cards/dkoerner/card.hmtl?email=${email}`;
+  const url = `https://dkoerner.github.io/esri-links/contact-cards/dkoerner/card.html?email=${email}`;
   createQRCodeImage(url, qrCodeContainer);
 
   function togglePortraitQR() {
