@@ -46,9 +46,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const url = `https://dkoerner.github.io/esri-links/contact-cards/dkoerner/card.html?email=${email}`;
   const img = createQRCodeImage(url, qrjsContainer);
 
-  const newImg = document.createElement("img");
-  newImg.href = img.href;
-  qrCodeContainer.appendChild(newImg);
+  // Add an event listener for the 'load' event
+  img.addEventListener('load', function() {
+    qrCodeContainer.innerHTML = ''; // remove all children
+    const newImg = document.createElement("img");
+    newImg.src = img.src;
+    qrCodeContainer.appendChild(newImg);
+  });
+
 
   function togglePortraitQR() {
     if( portraitContainer.style.display == "none" ) {
