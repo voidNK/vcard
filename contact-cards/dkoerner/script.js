@@ -13,7 +13,6 @@ function createQRCodeImage(url, qrContainer) {
   // The QR code library creates a table-based QR code by default.
   // Extract the 'img' element if it exists.
   const qrImage = qrContainer.querySelector('img');
-  console.log(qrImage);
   
   // If an 'img' element is not created, you might be using a library version or configuration
   // that generates a canvas or SVG instead. You need to handle those cases depending on your requirements.
@@ -50,8 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const newImg = document.createElement("img");
   newImg.href = img.href;
   qrCodeContainer.appendChild(newImg);
-
-  //qrCodeContainer.appendChild(img);
 
   function togglePortraitQR() {
     if( portraitContainer.style.display == "none" ) {
