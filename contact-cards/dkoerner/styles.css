@@ -76,7 +76,10 @@
 }
 
 .detail-list-item {
-  margin-left: 12px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15px;
   padding-top: 7px;
   padding-bottom: 7px;
 }
@@ -84,7 +87,7 @@
 .detail-list-item-icon {
   display: inline-flex;
   align-items: center; /* Centers the image vertically */
-  height: 50px; /* Optionally set a height */
+  /*height: 50px;  Optionally set a height */
 }
 .detail-list-item-icon img {
   vertical-align: middle; /* Helps remove bottom space/gap */
