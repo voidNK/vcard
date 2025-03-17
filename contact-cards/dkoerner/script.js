@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const img = createQRCodeImage(url, qrjsContainer);
 
   const newImg = document.createElement("img");
-  newImg.href = "./dkoerner_qr.png";
+  newImg.href = img.href;
   qrCodeContainer.appendChild(newImg);
 
   //qrCodeContainer.appendChild(img);

@@ -38,6 +38,10 @@
   object-position: center; /* Centers the image within the div */
 }
 
+.qrjs-container {
+  display:none;
+}
+
 .header {
 }
 
