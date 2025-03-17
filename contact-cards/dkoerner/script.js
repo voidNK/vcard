@@ -13,11 +13,12 @@ function createQRCodeImage(url, qrContainer) {
   // The QR code library creates a table-based QR code by default.
   // Extract the 'img' element if it exists.
   const qrImage = qrContainer.querySelector('img');
+  console.log(qrImage);
   
   // If an 'img' element is not created, you might be using a library version or configuration
   // that generates a canvas or SVG instead. You need to handle those cases depending on your requirements.
   // For demonstration, let's assume an 'img' is generated.
-  
+
   return qrImage;
 }
 
@@ -44,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // generate qr code image
   const url = `https://dkoerner.github.io/esri-links/contact-cards/dkoerner/card.html?email=${email}`;
-  createQRCodeImage(url, qrjsContainer);
+  const img = createQRCodeImage(url, qrjsContainer);
+  qrCodeContainer.appendChild(img);
 
   function togglePortraitQR() {
     if( portraitContainer.style.display == "none" ) {
