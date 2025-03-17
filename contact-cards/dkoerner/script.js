@@ -40,10 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
   // view qr code id requested --------------
   const portraitContainer = document.getElementById('portrait-container');
   const qrCodeContainer = document.getElementById("qr-code-container");
+  const qrjsContainer = document.getElementById("qrjs-container");
 
   // generate qr code image
-  //const url = `https://dkoerner.github.io/esri-links/contact-cards/dkoerner/card.html?email=${email}`;
-  //createQRCodeImage(url, qrCodeContainer);
+  const url = `https://dkoerner.github.io/esri-links/contact-cards/dkoerner/card.html?email=${email}`;
+  createQRCodeImage(url, qrjsContainer);
 
   function togglePortraitQR() {
     if( portraitContainer.style.display == "none" ) {
