@@ -1,29 +1,40 @@
-.body {
-}
+.body {}
 
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 80%; /* full with on smaller screens */
-  margin: 0 auto; /* Auto margin on both sides to center the div */
-  padding: 20px; /* Optional padding */
-  border: 1px solid #ccc; /* Optional border for visibility */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional shadow for better visibility */
+  width: 80%;
+  /* full with on smaller screens */
+  margin: 0 auto;
+  /* Auto margin on both sides to center the div */
+  padding: 20px;
+  /* Optional padding */
+  border: 1px solid #ccc;
+  /* Optional border for visibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for better visibility */
 }
 
 /* Media query for screens wider than 768px */
 @media (min-width: 768px) {
   .card {
-      max-width: 359px; /* Maximum width on larger screens */
+    max-width: 359px;
+    /* Maximum width on larger screens */
   }
 }
 
 .portrait-container img {
-  width: 100%; /* Makes the image width fill the container */
-  height: 100%; /* Makes the image height fill the container */
-  object-fit: cover; /* Ensures the image covers the div completely, might crop */
-  object-position: center; /* Centers the image within the div */
+  width: 100%;
+  /* Makes the image width fill the container */
+  height: 100%;
+  /* Makes the image height fill the container */
+  max-height: 300px;
+  /* Optional: limits the height of the image */
+  object-fit: cover;
+  /* Ensures the image covers the div completely, might crop */
+  object-position: center;
+  /* Centers the image within the div */
   border-radius: 362px;
 }
 
@@ -32,18 +43,23 @@
 }
 
 .qr-code-container img {
-  width: 100%; /* Makes the image width fill the container */
-  height: 100%; /* Makes the image height fill the container */
-  object-fit: cover; /* Ensures the image covers the div completely, might crop */
-  object-position: center; /* Centers the image within the div */
+  width: 100%;
+  /* Makes the image width fill the container */
+  height: 100%;
+  /* Makes the image height fill the container */
+  max-height: 300px;
+  /* Optional: limits the height of the image */
+  object-fit: cover;
+  /* Ensures the image covers the div completely, might crop */
+  object-position: center;
+  /* Centers the image within the div */
 }
 
 .qrjs-container {
-  display:none;
+  display: none;
 }
 
-.header {
-}
+.header {}
 
 .header .name {
   display: block;
@@ -76,7 +92,7 @@
 }
 
 .detail-list-item {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: 15px;
@@ -86,15 +102,18 @@
 
 .detail-list-item-icon {
   display: inline-flex;
-  align-items: center; /* Centers the image vertically */
+  align-items: center;
+  /* Centers the image vertically */
   /*height: 50px;  Optionally set a height */
 }
+
 .detail-list-item-icon img {
-  vertical-align: middle; /* Helps remove bottom space/gap */
+  vertical-align: middle;
+  /* Helps remove bottom space/gap */
 }
 
 .detail-list-item-text {
-  display:inline-block;
+  display: inline-block;
 
   margin-left: 16px;
 
@@ -115,7 +134,10 @@
 
 .centered-text {
   display: inline-flex;
-  align-items: center; /* Aligns text vertically */
-  justify-content: center; /* Centers text horizontally if needed */
-  height: 50px; /* Adjust height as needed */
+  align-items: center;
+  /* Aligns text vertically */
+  justify-content: center;
+  /* Centers text horizontally if needed */
+  height: 50px;
+  /* Adjust height as needed */
 }
