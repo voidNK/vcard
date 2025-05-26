@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const qrjsContainer = document.getElementById("qrjs-container");
 
   // generate qr code image
-  const url = `https://voidnk.github.io/vcard/card.html?email=${email}`;
+  const url = `https://voidnk.github.io/vcard/index.html?email=${email}`;
   const img = createQRCodeImage(url, qrjsContainer);
 
   // Add an event listener for the 'load' event
