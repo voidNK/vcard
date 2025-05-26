@@ -1,4 +1,6 @@
-.body {}
+.body {
+  justify-content: center;
+}
 
 
 .card {
@@ -59,7 +61,9 @@
   display: none;
 }
 
-.header {}
+.header {
+  justify-content: center;
+}
 
 .header .name {
   display: block;
